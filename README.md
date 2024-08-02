@@ -9,7 +9,6 @@ Reference: Steingrimsson, J. A., Diao, L., & Strawderman, R. L. (2019). Censorin
 
 Install CURT directly from GitHub using:
 
-```R
 # If devtools is not already installed
 if(!require(devtools)) install.packages("devtools")
 devtools::install_github("aambekar-brown/CURT")
@@ -35,6 +34,8 @@ curt(
   type = "drl",
   mtry = NULL
 )
+
+```
 
 ### Arguments
 
