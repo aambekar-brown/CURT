@@ -1,0 +1,23 @@
+Package: CURT
+Type: Package
+Title: Survival analysis using censoring unbiased random forests
+Version: 0.1.0
+Authors@R: c(
+    person("Akhil", "Ambekar", email = "akhil_ambekar@brown.edu", role = c("aut", "cre")),
+    person("Jon", "Steingrimsson", email = "jon_steingrimsson@brown.edu", role = "aut"))
+Maintainer: The package maintainer <akhil.ambekar@brown.edu>
+Description: This function implements the censoring unbiased random forest algorithm developed in Steingrimsson et al. (2019) using both a Buckley-James loss function and a doubly robust loss function. The outputs are survival probabilities on a test set and variable importance measures were higher values imply that the variable is more important. Steingrimsson, J. A., Diao, L., & Strawderman, R. L. (2019). Censoring unbiased regression trees and ensembles. Journal of the American Statistical Association, 114(525), 370-383.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Depends:
+    R (>= 4.3)
+Imports:
+    stats (>= 4.3.1),
+    rpart (>= 4.1.19),
+    survival (>= 3.5.5),
+    randomForest (>= 4.7.1.1)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
