@@ -24,7 +24,7 @@ devtools::install_github("aambekar-brown/CURT")
 library(CURT)
 
 # Access the function documentation
-?curt
+?CURT::curt
 
 # Example function call
 curt(
