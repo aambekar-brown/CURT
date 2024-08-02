@@ -24,7 +24,6 @@ library(CURT)
 ?curt
 
 # Example function call
-
 curt(
   formula,
   train_data,
@@ -63,7 +62,7 @@ Returns a list containing survival predictions on the test set and variable impo
 train_data <- read.csv(system.file("extdata", "train_data.csv", package = "CURT"))
 test_data <- read.csv(system.file("extdata", "test_data.csv", package = "CURT"))
 result <- curt(Surv(obs, delta) ~ ., train_data, test_data, n.tree = 500, tau1 = 0.6, type = "drl")
-
+```
 
 ### Example 2: Importing Data from Local Drive
 ```R
@@ -75,4 +74,4 @@ test_data <- read.csv(test_data_path)
 
 # Apply the CURT function
 result <- curt(Surv(obs, delta) ~ ., train_data, test_data)
-
+```
